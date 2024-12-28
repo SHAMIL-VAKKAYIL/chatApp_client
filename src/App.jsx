@@ -4,8 +4,7 @@ import io from 'socket.io-client'
 import { nanoid } from 'nanoid'
 
 // no dotenv
-
-const socket = io.connect('http://localhost:3000')
+const socket = io.connect(import.meta.env.VITE_BACKEND_URL)
 const username = nanoid(5)
 
 
@@ -43,7 +42,7 @@ function App() {
               <p key={index}><span className='user'>{payload.username}</span> <span className='msg'>{payload.message}</span></p>
             )
           })}
-        </div>
+        </div><br />
         <form action="" onSubmit={sendChat}>
           <input type="text" name='chat'
             placeholder='Write here...'

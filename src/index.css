@@ -72,7 +72,7 @@ input{
     border: 2px solid transparent;
     outline: #646cff;
     border-radius: 10px;
-
+    width: 100%;
 }
 .user{
   padding: 5px 15px;
@@ -101,7 +101,7 @@ p{
 }
 form{
   display: flex;
-  width: 85%;
+  width: 100%;
   margin: auto;
   gap: 10px;
   justify-content: center;
