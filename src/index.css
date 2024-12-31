@@ -106,6 +106,33 @@ form{
   gap: 10px;
   justify-content: center;
 }
+.popup{
+  background-color: black;
+  border-radius: 10px;
+  border: 0;
+  transition: all 5s;
+}
+.popup p{
+  border: 2px solid rgba(107, 102, 102, 0.679);
+}
+.popup p:hover{
+  border: 2px solid #646cff;
+}
+.popup_container{
+  transition: opacity 0.5s ease ,transform 0.5s ease;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
 .chat_display{
   margin: auto;
   width: 95%;
